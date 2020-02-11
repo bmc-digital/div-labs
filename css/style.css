@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	background: #fff;
+}
+
+
+
+/*--------------------------------*/
+/*..... HEADING / APP NAME ...... */
+/*--------------------------------*/
+
+#heading{
+	margin: 25px 10% 10px 10%;
+	display: inline-flex;
+}
+
+#me-logo {
+	width: 100px;
+	margin-right: 20px;
+}
+#heading h1 {
+	font-size: 50px;
+	color: #FF00BB;
+}
+
+#heading h4 {
+	color: gray;
+}
+
+
+#rnm-header {
+	display: flex;
+	justify-content: center;
+}
+
+#rnm-header img {
+	height: 100%;
+}
+
+#rnm-header h2 {
+	font-size: 50px;
+	color: rgb(0, 176, 199);
+	margin: 0;
+	text-shadow:
+		-1px -1px 0 rgb(131, 200, 85),
+		1px -1px 0 rgb(131, 200, 85),
+		-1px 1px 0 rgb(131, 200, 85),
+		1px 1px 0 rgb(131, 200, 85);	
+}
+
+#rnm-div {
+	width: 30%;
+	background-image: url(../images1/rnm-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+
+/*--------------------------------*/
+/*..... Main Area ...... */
+/*--------------------------------*/
+
+main {
+	display: flex;
+	justify-content: center;
+	margin: 20px 5% 50px 5%;
+}
+
+
+/*--------------------------------*/
+/*......... MEME AREA ........... */
+/*--------------------------------*/
+
+.meme-container{
+	width: 55%;
+	border: 1px solid gray;
+	margin-right: 10px;
+}
+
+.meme-area {
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	padding-top: 75%;
+  	background: white;
+  	position: relative;
+}
+
+.meme-area-img {
+	position: absolute;
+  	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/*	background-image: url(../images/02.png);
+	background-size: contain;*/
+}
+
+#meme-img {
+	background-image: url(../images/01.png);
+	background-size: contain;
+}
+
+/*print Text boxes*/
+
+/*.text-box{
+	border: 2px dotted gray;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 25px;
+	letter-spacing: 1.6px;
+	word-spacing: 1.8px;
+	color: #FFFFFF;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: transparent;	
+}*/
+
+.text-box{
+	border: 2px dotted gray;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight: 400;
+}
+
+
+/*@supports (-webkit-text-stroke: 1px black) {
+  .text-box {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+  }
+}*/
+
+
+
+
+/*
+#printText1 {
+	position: absolute; 
+	left: 0%; 
+	top: 0%; 
+	width: 52%; 
+	height: 21.5%; 
+	z-index: 1; 
+	margin:0;
+}
+*/
+
+
+#printText1 {
+	position: absolute; 
+	left: 0%; 
+	top: 0%; 
+	width: 52%; 
+	height: 21.5%; 
+	z-index: 1; 
+	margin:0;
+}
+
+
+
+
+#printText2 {
+	position: absolute; 
+	left: 52%; 
+	top: 0%; 
+	width: 48%; 
+	height: 21.5%; 
+	z-index: 1; 
+	margin: 0;
+}
+
+#printText3, #input-3 {
+	display: none;
+}
+
+
+
+
+
+
+/*--------------------------------*/
+/*......... INPUT AREA .......... */
+/*--------------------------------*/
+
+
+#input-section{
+	width: 35%;
+	padding: 10px;
+	border: 3px solid #1BFFFF;
+	/*margin: 5px 10px;*/
+	font-size: 12px;
+	color: gray;
+}
+
+#input-section h3{
+	font-size: 18px;
+	text-align: center;
+	color: #FF00BB;
+	margin-bottom: 15px;
+}
+
+
+.input-div {
+	margin-bottom: 25px;
+}
+
+input {
+	width: 100%;
+	height: 30px;
+	font-size: 18px;
+}
+
+
+/*--------------------------------*/
+/*......... IMG CAROSEL .......... */
+/*--------------------------------*/
+
+
+
+.scroll-section { 
+	overflow-x: scroll; 
+	height: 150px;
+	margin: 10px 10% 50px 10%;
+}
+
+#scroll-line{
+	display: flex;
+	justify-content: center;
+	border-bottom: 3px solid #1BFFFF; 
+	margin: 0 auto;
+	color: #FF00BB;
+	width: 80%;
+}
+
+
+.scroll-wrapper { 
+	width: 1100px;
+	display: flex;
+	/*background-color: gray;*/
+}
+
+.scroll-box {
+	height: 100px;
+	width: 100px;
+	margin: 0 5px 0 5px;
+	border: 1px solid gray;
+}
+
+#box1{
+	background-image: url(../images/01.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box2{
+	background-image: url(../images/02.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box3{
+	background-image: url(../images/03.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box4{
+	background-image: url(../images/04.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box5{
+	background-image: url(../images/05.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box6{
+	background-image: url(../images/06.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box7{
+	background-image: url(../images/07.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box8{
+	background-image: url(../images/08.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box9{
+	background-image: url(../images/09.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#box10{
+	background-image: url(../images/10.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+
+/*--------------------------------*/
+/*......... contact .......... */
+/*--------------------------------*/
+
+
+
+#contact-info{
+	width: 40%;
+	margin-right: 10px;
+	border: 2px solid #1BFFFF;
+	background-image: url(../images/nyc-map.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#contact-form{
+	width: 60%;
+	padding: 0 10px 0 10px;
+	/*border-radius: 5px;*/
+}
+
+#contact-info img {
+	max-width: 100%;
+	/*max-height: 100%*/
+	z-index: -1;
+}
+
+#top-line{
+	background-color: #1BFFFF;
+	color: #FF00BB;
+	font-size: 20px;
+	padding: 3px 0 3px 0;
+}
+
+#bottom-line{
+	margin: 2px 0 25px 0;
+	color: gray;
+}
+
+#top-line, #bottom-line{
+	text-align: center;
+}
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #FF00BB;
+}
+
+/* Style the submit button */
+input[type=submit], input[type=button] {
+  background-color: #1BFFFF;
+  color: #FF00BB;
+  padding: 5px 31px;
+  border: 1px solid #ff00bb;
+  border-radius: 29px;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+  width: 200px;
+  margin-top: 10px;
+}
+
+/*/* Style the container */
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+*/
+
+/* Floating column for labels: 25% width */
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+	.col-25, .col-75, {
+	    width: 100%;
+	    margin-top: 0;
+	  }
+
+	input[type=submit] {
+		width: 100%;
+	}
+
+	#contact-info {
+		display: none;
+	}
+
+}
+
+
+
+/*#print-btn{
+	display: none;
+}
+*/
+.card {
+	display: float;
+	width: 150px;
+	height: 200px;
+	/*background: url(../images/card-back.png) no-repeat center center fixed;*/
+}
+
+#rnm-container{
+	display:block;
+}
+
+#game-container{
+	text-align: center;
+}
+
+
+#intro-container{
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	height: 250px;
+}
+
+
+#gear {
+
+	width: 250px;
+
+}
+
+#img-logo {
+	
+	width: 250px;
+	
+}
+
+#div-gear{
+	position: absolute;
+	/*left: 38%;*/
+	z-index: 2;
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+#div-logo {
+	position: absolute;
+	/*left: 38%;*/
+	z-index: 3;
+}
+
+
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+#coming-soon{
+	text-align: center;
+	color: #1BFFFF;
+	/*font-size: 25px;*/
+	/*width: 100%;
+	z-index: 5;*/
+}
